@@ -23,7 +23,7 @@ Authenticated users
 
 **Design:** Figma
 
-**Client:** HTML5 CSS JAVASCRIPT
+**Client:** HTML CSS JAVASCRIPT
 
 **Server:** Python
 
