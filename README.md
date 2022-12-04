@@ -1,17 +1,17 @@
 # Chunkfile TeamMagpiepp
 
-Chunkfile is a platform that accepts 2 large file formats (CSV or JSON), with possibility of adding more formats later, and break them into smaller bits. It propose properly formatted result, allow user save data and come back to download
+Chunkfile is a platform that accepts 2 large file formats (CSV or JSON), with possibility of adding more formats later, and break them into smaller bits. It propose properly formatted result, allow user save data and come back to download.
 
 ## Features
 
-Unauthenticated users
+Unauthenticated users.
 
 - can visit the platform to view basic information about it
 - can view and Interact with the documentation
 - have to register to view more details
 - cannot have full access to use until registered
 
-Authenticated users
+Authenticated users.
 
 - will have full access to the platform
 - have access to setting size of chunk
