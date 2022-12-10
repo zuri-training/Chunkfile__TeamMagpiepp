@@ -1,0 +1,178 @@
+@import url(../fontawesome-free-6.2.0-web/css/all.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff !important;
+  color: black;
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* UNAUTHENTICATED NAVBAR START */
+
+nav {
+  list-style: none;
+}
+nav img {
+  width: 80px;
+  height: 80px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none !important;
+}
+ul {
+  padding-left: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+.decline {
+  padding: 10px 40px;
+  background-color: rgb(221, 219, 219);
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.accept {
+  padding: 10px 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.accept:hover {
+  background-color: #7c74db;
+  color: #000000;
+}
+.decline:hover {
+  background-color: #3127a7;
+  color: #ffffff;
+}
+.login {
+  padding: 10px 40px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.signup {
+  padding: 10px 40px;
+  background-color: #3127a7;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+/* UNAUTHENTICATED NAVBAR END */
+
+.first-level {
+  width: 35%;
+  margin: auto;
+}
+.first-level img {
+  width: 500px;
+  height: 300px;
+}
+.second-level img {
+  width: 400px;
+  height: 400px;
+}
+.frames {
+  background-color: #7c74db;
+}
+.frames img {
+  width: 300px;
+  height: 300px;
+  padding: 50px;
+}
+.benefits img {
+  width: 100px;
+  height: 100px;
+}
+/* FOOTER */
+footer {
+  background-color: #3127a7;
+  color: white;
+}
+footer a {
+  color: rgb(194, 192, 192);
+}
+footer li {
+  list-style: none;
+}
+
+.footer-line {
+  height: 10px;
+  width: 100%;
+  border-top: 2px solid yellow;
+}
+
+/* TESTIMONIAL */
+.testimonial {
+  background-color: #e4e4e4;
+}
+.testimonial p {
+  line-height: 19px;
+  margin-top: 16px;
+}
+
+.testimonial h5 {
+  margin-top: 8px;
+}
+
+.testimonial .box {
+  margin-top: 25px;
+}
+.underline {
+  border-bottom: 2px solid black;
+  width: 80%;
+  margin: auto;
+}
+.box .text {
+  color: #3127a7;
+}
+.checked {
+  color: orange !important;
+}
+/* TESTIMONIAL / */
+
+@media only screen and (max-width: 1007px) {
+  header {
+    font-size: 7px;
+  }
+  nav img {
+    width: 60px;
+    height: 60px;
+  }
+  .login {
+    padding: 10px 30px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+  }
+  .signup {
+    padding: 10px 30px;
+    background-color: #3127a7;
+    color: white;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    font-size: 16px;
+  }
+  .first-level {
+    width: 60% !important;
+    margin: auto !important;
+  }
+}
