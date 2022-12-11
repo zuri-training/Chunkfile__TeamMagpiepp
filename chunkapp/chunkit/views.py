@@ -7,8 +7,14 @@ def landing(request): #landing page
 def aboutUs(request):
     return render(request, 'aboutUs.html')
 
-#def PrivacyPolicy(request):
-    return render(request, 'PrivacyPolicy.html')
+def privacy(request):
+    return render(request, 'privacy.html')
 
-#def Faq(request):
-    return render(request, 'Faq.html')    
+def contactUs(request):
+    return render(request, 'contactUs.html')
+
+def termsOfUse(request):
+    return render(request, 'termsOfUse.html')       
+
+def disclaimer(request):
+    return render(request, 'disclaimer.html')     

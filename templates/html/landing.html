@@ -94,7 +94,7 @@
               up into smaller chunks, our powerful data allows tool shows you to
               use the best format for your business
             </p>
-            <a class="signup my-3" href="{% static '#' %}">Get started</a>
+            <a class="signup my-3" href="{% url 'accounts:SignUp' %}">Get started</a>
           </div>
         </div>
         <div class="row align-items-center my-5">
@@ -106,7 +106,7 @@
               and you're free to either download or save to your profile. We
               also support other formats.
             </p>
-            <a class="signup my-3" href="{% static '#' %}">Get started</a>
+            <a class="signup my-3" href="{% url 'accounts:SignUp' %}">Get started</a>
           </div>
           <div class="col-md-6 pl-5 d-none d-lg-block">
             <img
@@ -321,21 +321,21 @@
                     <li class="py-2">
                       <a
                         class="nav-link p-0"
-                        href="{% static './aboutUs.html' %}"
+                        href="{% url 'chunkit:aboutUs' %}"
                         >About us</a
                       >
                     </li>
                     <li class="py-2">
                       <a
                         class="nav-link p-0"
-                        href="{% static './termsOfUse.html' %}"
+                        href="{% url 'chunkit:termsOfUse' %}"
                         >Terms of use</a
                       >
                     </li>
                     <li class="py-2">
                       <a
                         class="nav-link p-0"
-                        href="{% static './privacy.html' %}"
+                        href="{% url 'chunkit:privacy' %}"
                         >Privacy policies</a
                       >
                     </li>
@@ -397,10 +397,10 @@
                     data-parent="#accordion"
                   >
                     <li class="py-2">
-                      <a class="nav-link p-0" href="../">Contact us</a>
+                      <a class="nav-link p-0" href="{% url 'chunkit:contactUs' %}">Contact us</a>
                     </li>
                     <li class="py-2">
-                      <a class="nav-link p-0" href="#">FAQs</a>
+                      <a class="nav-link p-0" href="">FAQs</a>
                     </li>
                   </ul>
                 </div>

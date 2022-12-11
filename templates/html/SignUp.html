@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login - Chunk IT</title>
-    <link rel="stylesheet" href="{% static '../static/accounts/css/signup.css' %}" />
+    <title>Sign Up - Chunk IT</title>
+    <link rel="stylesheet" href="{% static '../static/chunkit/css/SignUp.css' %}" />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -35,10 +35,10 @@
               <a class="nav-link" href="{% url 'chunkit:aboutUs'%}">About us</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="./disclaimer.html">Doumentation</a>
+              <a class="nav-link" href="{% url 'chunkit:disclaimer'%}">Doumentation</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">Contact us</a>
+              <a class="nav-link" href="{% url 'chunkit:contactUs'%}">Contact us</a>
             </li>
           </ul>
         </div>
@@ -53,6 +53,7 @@
           </div>
           <div>
             <form action="Login" method="POST">
+                {% csrf_token %}
               <div>
                 <label for="fname"> Full Name</label><br />
                 <input class="fname" type="text" name="fname" /><br />
@@ -73,13 +74,11 @@
                 <input class="" type="checkbox" value="" id="" />
                 <label class="" for="form-check" name="form-check">
                   I agree to the
-                  <a href="./termsOfUse.html">Terms of Use</a> and
-                  <a href="./privacy.html">Privacy Policy</a>
+                  <a href="{% url 'chunkit:termsOfUse'%}">Terms of Use</a> and
+                  <a href="{% url 'chunkit:privacy'%}">Privacy Policy</a>
                 </label>
               </div>
-              <div class="text-center log my-4">
-                <a class="signup text-center" href="{% url 'accounts:login' %}">Sign Up</a>
-              </div>
+              <input type="Submit">
             </form>
           </div>
         </div>

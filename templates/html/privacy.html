@@ -1,3 +1,4 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy</title>
-    <link rel="stylesheet" href="../css/rough.css" />
+    <link rel="stylesheet" href="{% static '../static/chunkit/css/rough.css'%}" />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -24,8 +25,8 @@
   <body>
     <header class="pl-5 container-fluid shadow">
       <nav class="navbar navbar-expand-md container justify-content-around">
-        <a class="navbar-brand font-weight-bolder pr-5" href="./landing.html"
-          ><img src="../images/logo.jpeg" alt="chunk-it logo"
+        <a class="navbar-brand font-weight-bolder pr-5" href="{% static '../templates/html/landing.html'%}"
+          ><img src="{% static '../static/chunkit/images/logo.jpeg'%}" alt="chunk-it logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -40,13 +41,13 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item px-4">
-              <a class="nav-link" href="./aboutUs.html">About us</a>
+              <a class="nav-link" href="{% url 'chunkit:aboutUs'%}">About us</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="./disclaimer.html">Doumentation</a>
+              <a class="nav-link" href="{% url 'chunkit:disclaimer'%}">Doumentation</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="./contactUs.html">Contact us</a>
+              <a class="nav-link" href="{% url 'chunkit:contactUs'%}">Contact us</a>
             </li>
           </ul>
         </div>

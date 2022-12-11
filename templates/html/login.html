@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Chunk IT</title>
-    <link rel="stylesheet" href="{% static '../static/accounts/css/login.css'%}" />
+    <link rel="stylesheet" href="{% static '../static/chunkit/css/login.css'%}" />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -35,10 +35,10 @@
               <a class="nav-link" href="{% static '../templates/html/aboutUs.html'%}">About us</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="./disclaimer.html">Doumentation</a>
+              <a class="nav-link" href="{% url 'chunkit:disclaimer'%}">Doumentation</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="./contactUs.html">Contact us</a>
+              <a class="nav-link" href="{% url 'chunkit:contactUs'%}">Contact us</a>
             </li>
           </ul>
         </div>
