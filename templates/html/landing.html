@@ -1,12 +1,15 @@
-{% load static %}  
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Chunk-it </title>
-    <link rel="stylesheet" href="{% static '../static/chunkit/css/landing.css' %}" />
+    <title>Chunk-it</title>
+    <link
+      rel="stylesheet"
+      href="{% static '../static/chunkit/css/landing.css' %}"
+    />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -17,7 +20,9 @@
     <header class="pl-5 container-fluid shadow">
       <nav class="navbar navbar-expand-md container justify-content-around">
         <a class="navbar-brand font-weight-bolder pr-5" href="{% static '#' %}"
-          ><img src="{% static '../static/chunkit/images/logo.jpeg' %}" alt="chunk-it logo"
+          ><img
+            src="{% static '../static/chunkit/images/logo.jpeg' %}"
+            alt="chunk-it logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -32,7 +37,9 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item px-4">
-              <a class="nav-link" href="{% url 'chunkit:aboutUs' %}">About us</a>
+              <a class="nav-link" href="{% url 'chunkit:aboutUs' %}"
+                >About us</a
+              >
             </li>
             <li class="nav-item px-4">
               <a class="nav-link" href="{% static '#' %}">Doumentation</a>
@@ -61,7 +68,9 @@
           JSON files, divide them, and also break them into smaller CHUNKS.
           Other file types and formats are also supported
         </p>
-        <a class="signup my-3 d-none d-md-block" href="{% static '#' %}">Get started</a>
+        <a class="signup my-3 d-none d-md-block" href="{% static '#' %}"
+          >Get started</a
+        >
         <div>
           <img
             class="my-5 d-none d-md-block"
@@ -73,7 +82,10 @@
       <section class="second-level container">
         <div class="row align-items-center mb-5">
           <div class="col-md-6">
-            <img src="{% static '../static/chunkit/images/drawingBoard.png' %}" alt="" />
+            <img
+              src="{% static '../static/chunkit/images/drawingBoard.png' %}"
+              alt=""
+            />
           </div>
           <div class="col-md-6 text-center">
             <h2><b>Powerful data chunking tool</b></h2>
@@ -97,12 +109,18 @@
             <a class="signup my-3" href="{% static '#' %}">Get started</a>
           </div>
           <div class="col-md-6 pl-5 d-none d-lg-block">
-            <img src="{% static '../static/chunkit/images/workStation.png' %}" alt="" />
+            <img
+              src="{% static '../static/chunkit/images/workStation.png' %}"
+              alt=""
+            />
           </div>
         </div>
         <div class="row align-items-center mb-5">
           <div class="col-md-6">
-            <img src="{% static '../static/chunkit/images/machinery.png' %}" alt="" />
+            <img
+              src="{% static '../static/chunkit/images/machinery.png' %}"
+              alt=""
+            />
           </div>
           <div class="col-md-6 text-center">
             <h2><b>Split & sort your Csv and Json files</b></h2>
@@ -117,17 +135,32 @@
       <section class="d-none d-lg-block">
         <h2 class="text-center"><b>How to use</b></h2>
         <div class="d-flex justify-content-around frames">
-          <img src="{% static '../static/chunkit/images/Frame 39.png' %}" alt="" />
-          <img src="{% static '../static/chunkit/images/Frame 40.png' %}" alt="" />
-          <img src="{% static '../static/chunkit/images/Frame 41.png' %}" alt="" />
-          <img src="{% static '../static/chunkit/images/Frame 42.png'%}" alt="" />
+          <img
+            src="{% static '../static/chunkit/images/Frame 39.png' %}"
+            alt=""
+          />
+          <img
+            src="{% static '../static/chunkit/images/Frame 40.png' %}"
+            alt=""
+          />
+          <img
+            src="{% static '../static/chunkit/images/Frame 41.png' %}"
+            alt=""
+          />
+          <img
+            src="{% static '../static/chunkit/images/Frame 42.png'%}"
+            alt=""
+          />
         </div>
       </section>
       <section class="py-5 text-center container benefits">
         <h2><b>Benefits of using Chunk IT</b></h2>
         <div class="row">
           <div class="col-md-4">
-            <img src="{% static '../static/chunkit/images/easyToUse.png'%}" alt="" />
+            <img
+              src="{% static '../static/chunkit/images/easyToUse.png'%}"
+              alt=""
+            />
             <h3 class="py-2"><b>Easy to Use</b></h3>
             <p>
               Our product makes data chunking easy for users of all experience
@@ -136,7 +169,10 @@
             </p>
           </div>
           <div class="col-md-4">
-            <img src="{% static '../static/chunkit/images/bestQuality.png'%}" alt="" />
+            <img
+              src="{% static '../static/chunkit/images/bestQuality.png'%}"
+              alt=""
+            />
             <h3 class="py-2"><b>Best Quality</b></h3>
             <p>
               Our product is ideal for databases, data warehouses, and data
@@ -145,7 +181,11 @@
             </p>
           </div>
           <div class="col-md-4">
-            <img class="p-2" src="{% static '../static/chunkit/images/secure3.png'%}" alt="" />
+            <img
+              class="p-2"
+              src="{% static '../static/chunkit/images/secure3.png'%}"
+              alt=""
+            />
             <h3 class="py-2"><b>Safe & Secure</b></h3>
             <p>
               Chunk IT allows organizations to securely store and transfer large
@@ -279,13 +319,25 @@
                     data-parent="#accordion"
                   >
                     <li class="py-2">
-                      <a class="nav-link p-0" href="{% static './aboutUs.html' %}">About us</a>
+                      <a
+                        class="nav-link p-0"
+                        href="{% static './aboutUs.html' %}"
+                        >About us</a
+                      >
                     </li>
                     <li class="py-2">
-                      <a class="nav-link p-0" href="{% static './termsOfUse.html' %}">Terms of use</a>
+                      <a
+                        class="nav-link p-0"
+                        href="{% static './termsOfUse.html' %}"
+                        >Terms of use</a
+                      >
                     </li>
                     <li class="py-2">
-                      <a class="nav-link p-0" href="{% static './privacy.html' %}">Privacy policies</a>
+                      <a
+                        class="nav-link p-0"
+                        href="{% static './privacy.html' %}"
+                        >Privacy policies</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -310,10 +362,14 @@
                     data-parent="#accordion"
                   >
                     <li class="py-2">
-                      <a class="nav-link p-0" href="{% static './termsOfUse.html' %}">Terms and conditions</a>
+                      <a
+                        class="nav-link p-0"
+                        href="{% static './termsOfUse.html' %}"
+                        >Terms and conditions</a
+                      >
                     </li>
                     <li class="py-2">
-                      <a class="nav-link p-0" href="#">Csv and Json</a>
+                      <a class="nav-link p-0" href="../">Csv and Json</a>
                     </li>
                     <li class="py-2">
                       <a class="nav-link p-0" href="#">How to split</a>
@@ -341,7 +397,7 @@
                     data-parent="#accordion"
                   >
                     <li class="py-2">
-                      <a class="nav-link p-0" href="#">Contact us</a>
+                      <a class="nav-link p-0" href="../">Contact us</a>
                     </li>
                     <li class="py-2">
                       <a class="nav-link p-0" href="#">FAQs</a>

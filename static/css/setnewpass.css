@@ -1,0 +1,94 @@
+@import url(../fontawesome-free-6.2.0-web/css/all.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #ffffff !important;
+  color: black;
+  font-family: "Inter", sans-serif !important;
+  overflow-x: hidden;
+}
+
+/* UNAUTHENTICATED NAVBAR START */
+
+nav {
+  list-style: none;
+}
+nav img {
+  width: 80px;
+  height: 80px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none !important;
+}
+ul {
+  padding-left: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+.decline {
+  padding: 10px 40px;
+  background-color: rgb(221, 219, 219);
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.accept {
+  padding: 10px 40px;
+  background-color: blue;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.accept:hover {
+  background-color: #7c74db;
+  color: #000000;
+}
+.decline:hover {
+  background-color: #3127a7;
+  color: #ffffff;
+}
+.login {
+  padding: 10px 40px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.signup {
+  padding: 10px 40px;
+  background-color: #3127a7;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+/* UNAUTHENTICATED NAVBAR END */
+.email {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.password {
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+/* .log {
+  width: 40%;
+}
+.log a {
+  padding: 15px 70px;
+}
+.login-img {
+  height: 400px;
+  width: 400px;
+} */
