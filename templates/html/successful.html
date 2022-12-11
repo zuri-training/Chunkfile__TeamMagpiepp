@@ -1,3 +1,4 @@
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,11 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp successful - Chunk-it</title>
-    <link rel="stylesheet" href="../css/termsOfUse.css" />
+    <link rel="stylesheet" href="{% static '../static/chunkit/css/termsOfUse.css'%}" />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      href="{% static 'https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css' %}"
     />
     <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -24,7 +25,7 @@
     <header class="pl-5 container-fluid shadow">
       <nav class="navbar navbar-expand-md container justify-content-between">
         <a class="navbar-brand font-weight-bolder pr-5" href="#"
-          ><img src="../images/logo.jpeg" alt="chunk-it logo"
+          ><img src="{% static '../static/chunkit/images/logo.jpeg'%}" alt="chunk-it logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -39,7 +40,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item px-4">
-              <a class="nav-link" href="#">About us</a>
+              <a class="nav-link" href="{% url 'chunkit:aboutUs' %}">About us</a>
             </li>
             <li class="nav-item px-4">
               <a class="nav-link" href="#">Doumentation</a>
@@ -57,7 +58,7 @@
         <!-- <b class="fa fa-check px-3" style="font-size: 4rem"></b> -->
       </h2>
       <div class="successImg">
-        <img src="../images/undraw_done_re_oak4-2 1.png" alt="" />
+        <img src="{% static '../static/chunkit/images/undraw_done_re_oak4-2 1.png'%}" alt="" />
       </div>
     </main>
   </body>

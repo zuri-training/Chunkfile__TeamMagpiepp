@@ -5,10 +5,10 @@ from django.http import HttpResponse
 
 def SignUp(request):
     if request.method == 'POST':
-        fname = request.POST.get('fname')
-        email = request.POST.get('email')
-        username = request.POST.get('uname')
-        password = request.POST.get('pass')
+        fname = request.POST['fname']
+        email = request.POST['email']
+        username = request.POST['uname']
+        password = request.POST['pass']
 
         NewUser = User.objects.create_user(username= username, email=email, password=password)
         NewUser.full_name = fname

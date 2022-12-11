@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login - Chunk IT</title>
-    <link rel="stylesheet" href="../css/login.css" />
+    <link rel="stylesheet" href="{% static '../static/accounts/css/login.css'%}" />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -15,8 +16,8 @@
   <body>
     <header class="pl-5 container-fluid shadow">
       <nav class="navbar navbar-expand-md container justify-content-around">
-        <a class="navbar-brand font-weight-bolder pr-5" href="./landing.html"
-          ><img src="../images/logo.jpeg" alt="chunk-it logo"
+        <a class="navbar-brand font-weight-bolder pr-5" href="{% static '../templates/html/landing.html'%}"
+          ><img src="{% static '../static/chunkit/images/logo.jpeg'%}" alt="chunk-it logo"
         /></a>
         <button
           class="navbar-toggler"
@@ -31,7 +32,7 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item px-4">
-              <a class="nav-link" href="./aboutUs.html">About us</a>
+              <a class="nav-link" href="{% static '../templates/html/aboutUs.html'%}">About us</a>
             </li>
             <li class="nav-item px-4">
               <a class="nav-link" href="#">Doumentation</a>
@@ -48,7 +49,7 @@
         <div class="form col-md-6">
           <div class="py-5">
             <h2><b>Login To Your Account</b></h2>
-            <a href="./signup.html">Don't have an account? Sign up</a>
+            <a href="{% static '../templates/html/SignUp.html'%}">Don't have an account? Sign up</a>
           </div>
           <div>
             <form action="Login" method="POST">
@@ -76,7 +77,7 @@
           </div>
         </div>
         <div class="col-md-6 d-none d-md-block my-5">
-          <img class="login-img" src="../images/login.png" alt="" />
+          <img class="login-img" src="{% static '../static/chunkit/images/login.png'%}" alt="" />
         </div>
       </div>
     </main>
