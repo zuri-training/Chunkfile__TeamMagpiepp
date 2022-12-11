@@ -4,8 +4,8 @@ from django.http import HttpResponse
 def landing(request): #landing page
     return render(request, 'landing.html')
 
-#def Aboutus(request):
-    return render(request, 'Aboutus.html')
+def aboutUs(request):
+    return render(request, 'aboutUs.html')
 
 #def PrivacyPolicy(request):
     return render(request, 'PrivacyPolicy.html')
