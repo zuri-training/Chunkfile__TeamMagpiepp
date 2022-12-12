@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="stylesheet" href="../css/savedFiles.css" />
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -22,7 +22,7 @@
             id="sidebar"
           >
             <div class="text-center p-3">
-              <a href=""
+              <a href="./dashboard.html"
                 ><img
                   src="../images/logo.jpeg"
                   alt="chunkit-logo"
@@ -50,13 +50,15 @@
                 class="navbar-nav flex-column w-100 justify-content-center pt-5"
               >
                 <li class="nav-item my-xl-1 my-md-1">
-                  <a href="#" class="nav-link active"> Dashboard</a>
+                  <a href="./dashboard.html" class="nav-link active">
+                    Dashboard</a
+                  >
                 </li>
                 <li class="nav-item my-xl-1 my-md-1">
-                  <a href="#" class="nav-link"> Saved Files</a>
+                  <a href="./savedFiles.html" class="nav-link"> Saved Files</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link"> Settings </a>
+                  <a href="./settings.html" class="nav-link"> Settings </a>
                 </li>
                 <li class="nav-item profile-pic">
                   <img
@@ -76,8 +78,7 @@
           <header class="py-4 container">
             <section class="row d-flex justify-content-between">
               <div class="col-lg my-2">
-                <h2><b>Dashboard</b></h2>
-                <p>Welcome, Habeebah</p>
+                <h2><b>Saved Files</b></h2>
               </div>
               <div class="col-lg my-2">
                 <input
@@ -92,81 +93,90 @@
                 <a href="#"
                   ><i class="fa fa-bell px-2 py-1 settings-icons"></i
                 ></a>
-                <a href="#"
+                <a href="./dashboard.html"
                   ><i class="fa fa-sign-out px-2 py-1 settings-icons"></i
                 ></a>
               </div>
             </section>
           </header>
-          <main>
-            <div class="container">
-              <div class="row container">
-                <div class="col-md-6 col-lg-8">
-                  <div class="shadow text-center box my-2">
-                    <div class="py-3">
-                      <h2>Upload your File</h2>
-                      <p class="exp">CSV, JSON, XML,HTML are allowed</p>
-                      <div class="py-3 px-3">
-                        <input class="border" type="file" class="" id="" />
-                        <label class="" for=""></label>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="shadow text-center box my-2 py-3">
-                    <h2>Customize Settings</h2>
-                    <p class="exp">
-                      Choose the output chunk size or value that you want.
-                    </p>
-                    <div>
-                      <span class="pr-3"
-                        ><label class="px-5" for="split"
-                          >Split by number of chunks</label
-                        >
-                        <input type="radio" name="split" id="split"
-                      /></span>
-                      <span
-                        ><label for="split">Split by chunk size</label>
-                        <input type="radio" name="split" id="split"
-                      /></span>
-                    </div>
-                    <div class="row py-4">
-                      <span
-                        ><label class="row mx-3 px-3" for="noOfRows"
-                          >Number of rows</label
-                        >
-                        <br />
-                        <input class="row mx-3 px-" type="number" />
-                      </span>
-                      <span
-                        ><label class="row mx-3" for="chunkSize"
-                          >Chunk size</label
-                        >
-                        <br />
-                        <input class="row mx-3" type="number" />
-                      </span>
-                    </div>
-                  </div>
+          <main class="container">
+            <section class="shadow py-3 m-4">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">S/N</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">File Name</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="py-4"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="py-4"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="py-4"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="py-4"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td class="py-4"></td>
+                    <td></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section class="container p-3 py-5 m-4 shadow">
+              <div class="row">
+                <div class="col-md-8 text-center">
+                  <h3>Share your project</h3>
+                  <p class="pb-5 exp">
+                    <b> Share your projexts with your colleague.</b>
+                  </p>
+                  <label for="project-name"><b>Proect Name</b></label
+                  ><br />
+                  <input
+                    class="border w-50"
+                    type="file"
+                    name="project-name"
+                    id="project-name"
+                  /><br />
+                  <label class="py-2" for="share"><b>Share via mail</b></label
+                  ><br />
+                  <input
+                    type="email"
+                    name="share"
+                    class="w-50 px-3"
+                    placeholder="Enter mail address"
+                  />
                 </div>
-                <div class="col-md-6 col-lg-4 shadow p-3 my-files">
-                  <h3>My files</h3>
-                  <p class="exp">Files will be downloaded to your device.</p>
+                <div class="d-md-block d-none">
+                  <img
+                    class="shareImg a"
+                    src="../images/undraw_done_re_oak4-2 1.png"
+                    alt=""
+                  />
                 </div>
               </div>
-              <div class="row container my-3">
-                <div class="col-md-6 col-lg-8 p-3 shadow box">
-                  <div class="p-3">
-                    <h3>Conversion History</h3>
-                    <div class="history"></div>
-                  </div>
-                </div>
-                <div class="col-md-6 p-3 col-lg-4 shadow box">
-                  <div class="p-3">
-                    <h3>Statistics</h3>
-                    <div class="history a"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            </section>
           </main>
         </div>
       </div>
