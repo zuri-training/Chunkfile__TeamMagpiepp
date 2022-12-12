@@ -17,4 +17,7 @@ def termsOfUse(request):
     return render(request, 'termsOfUse.html')       
 
 def disclaimer(request):
-    return render(request, 'disclaimer.html')     
+    return render(request, 'disclaimer.html')   
+
+def dashboard(request):
+    return render(request, 'dashboard.html')       

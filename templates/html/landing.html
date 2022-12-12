@@ -42,10 +42,10 @@
               >
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="{% static '#' %}">Doumentation</a>
+              <a class="nav-link" href="{% url 'chunkit:disclaimer' %}">Doumentation</a>
             </li>
             <li class="nav-item px-4">
-              <a class="nav-link" href="{% static '#' %}">Contact us</a>
+              <a class="nav-link" href="{% url 'chunkit:contactUs' %}">Contact us</a>
             </li>
           </ul>
           <ul class="navbar-nav">
@@ -68,7 +68,7 @@
           JSON files, divide them, and also break them into smaller CHUNKS.
           Other file types and formats are also supported
         </p>
-        <a class="signup my-3 d-none d-md-block" href="{% static '#' %}"
+        <a class="signup my-3 d-none d-md-block" href="#"
           >Get started</a
         >
         <div>
@@ -94,7 +94,7 @@
               up into smaller chunks, our powerful data allows tool shows you to
               use the best format for your business
             </p>
-            <a class="signup my-3" href="{% url 'accounts:SignUp' %}">Get started</a>
+            <a class="signup my-3" href="#">Get started</a>
           </div>
         </div>
         <div class="row align-items-center my-5">
@@ -106,7 +106,7 @@
               and you're free to either download or save to your profile. We
               also support other formats.
             </p>
-            <a class="signup my-3" href="{% url 'accounts:SignUp' %}">Get started</a>
+            <a class="signup my-3" href="#">Get started</a>
           </div>
           <div class="col-md-6 pl-5 d-none d-lg-block">
             <img
