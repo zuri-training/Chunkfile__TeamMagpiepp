@@ -15,11 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth.views import LoginView 
 
 
 
 urlpatterns = [
     path('', include('chunkit.urls')),
     path('accounts/', include('accounts.urls') ),
+    path('login_user/', LoginView.as_view()),
     path('admin/', admin.site.urls),
+    
 ] 

@@ -40,8 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #apps made
-    'accounts',
-    'chunkit',
+    'accounts.apps.AccountsConfig',
+    'chunkit.apps.ChunkitConfig',
 ]
 
 MIDDLEWARE = [
@@ -135,3 +135,5 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'assets')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+LOGIN_REDIRECT_URL = 'dashboard/'

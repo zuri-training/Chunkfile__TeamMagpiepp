@@ -41,15 +41,14 @@ ul {
   background-color: #ffffff;
   color: black;
   border-radius: 10px;
-  border: 2px solid #3127A7
-}
+  border: 2px solid #3127A7}
+
 .accept {
   padding: 10px 40px;
   background-color: #3127A7;
   color: white;
   border-radius: 10px;
-  transition-duration: 0.4s;
-}
+  transition-duration: 0.4s;}
 .accept {
   transition-duration: 0.4s;
 }

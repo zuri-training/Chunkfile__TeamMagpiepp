@@ -1,0 +1,264 @@
+@import url(../fontawesome-free-6.2.0-web/css/all.css);
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* text-decoration: none; */
+}
+body {
+  background-color: #ffffff !important;
+  color: black;
+  font-family: "Inter", sans-serif !important;
+  color: #000000 !important;
+  font-family: "Encode Sans Semi Condensed", sans-serif !important;
+  overflow-x: hidden;
+}
+main {
+  border-radius: 20px !important;
+}
+/* UNAUTHENTICATED NAVBAR START */
+
+nav {
+  list-style: none;
+}
+nav img {
+  width: 80px;
+  height: 80px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none !important;
+}
+ul {
+  padding-left: 30px;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  padding: 150px;
+}
+.decline {
+  padding: 10px 40px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+  border: 2px solid #3127a7;
+}
+.accept {
+  padding: 10px 40px;
+  background-color: #3127a7;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+
+.accept:hover {
+  background-color: #7c74db;
+  color: #000000;
+}
+.decline:hover {
+  background-color: #3127a7;
+  color: #ffffff;
+}
+
+/* UNAUTHENTICATED NAVBAR END */
+
+.successful-signup {
+  font-size: 2.5rem;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: center;
+  color: green;
+}
+.successImg {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  /* width: auto; */
+  margin: auto;
+}
+
+.login {
+  padding: 10px 40px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.signup {
+  padding: 10px 40px;
+  background-color: #3127a7;
+  color: white;
+  border-radius: 10px;
+  transition-duration: 0.4s;
+}
+.back-link {
+  padding: 15px 90px;
+  background-color: #3127a7;
+  color: white;
+  border-radius: 10px;
+  margin-top: 50px;
+  /* transition-duration: 0.4s; */
+}
+
+.errorImg {
+  width: 350px;
+  height: 350px;
+}
+
+.search-something {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+}
+.settings-icons {
+  color: #000000;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.settings-icons:hover {
+  color: rgb(90, 89, 89);
+}
+
+.viewport {
+  padding-left: 250px;
+  /* -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; */
+}
+
+#content {
+  width: 100%;
+  position: relative;
+  margin-right: 0;
+}
+
+/* Sidebar Styles */
+
+.side-bar {
+  /* z-index: 1000; */
+  position: fixed;
+  /* left: 250px; */
+  width: 200px;
+  /* height: 100%; */
+  /* margin-left: -250px; */
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.sidebar .list {
+  list-style: none;
+}
+.nav-item:hover {
+  width: 100%;
+  background-color: #3127a7;
+}
+#sidebar header {
+  background-color: #263238;
+  font-size: 20px;
+  line-height: 52px;
+  text-align: center;
+}
+
+#sidebar header a {
+  color: #fff;
+  display: block;
+  text-decoration: none;
+}
+
+#sidebar header a:hover {
+  color: #fff;
+}
+
+#sidebar .nav a {
+  /* background: none; */
+  /* border-bottom: 1px solid #455a64; */
+  /* color: #cfd8dc; */
+  font-size: 14px;
+  padding: 16px 24px !important;
+}
+/* 
+#sidebar .nav a:hover {
+  background: none;
+  color: #eceff1;
+}
+
+#sidebar .nav a i {
+  margin-right: 16px;
+} */
+.brand-logo {
+  width: 50px;
+  height: 50px;
+}
+.profile-pic {
+  position: relative;
+  bottom: -150px;
+  font-size: 13px;
+  line-height: 5px;
+}
+.profile-pic:hover {
+  background-color: white !important;
+}
+.profile-pic img {
+  width: 50px;
+  height: 50px;
+  border: 2px dotted black;
+  margin: 10px;
+}
+
+.cards {
+  padding: 20px;
+  width: 80%;
+}
+.cards a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+.cards a:hover {
+  color: #3127a7;
+  text-decoration: none;
+}
+/* END */
+.accept {
+  transition-duration: 0.4s;
+}
+.accept:hover {
+  background-color: #7c74db;
+  color: #ffffff;
+}
+.decline {
+  transition-duration: 0.4s;
+}
+.decline:hover {
+  background-color: #3127a7;
+  color: #000000;
+}
+
+.box,
+.my-files {
+  border-radius: 20px;
+}
+.exp {
+  color: rgb(71, 71, 71);
+  font-size: 13px;
+}
+.history {
+  height: 400px;
+  background-color: #d6d8da;
+}
+.shareImg {
+  height: 300px;
+  width: 250px;
+}

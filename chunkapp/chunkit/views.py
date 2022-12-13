@@ -20,4 +20,5 @@ def disclaimer(request):
     return render(request, 'disclaimer.html')   
 
 def dashboard(request):
-    return render(request, 'dashboard.html')       
+    return render(request, 'dashboard.html')   
+

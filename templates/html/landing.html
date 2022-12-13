@@ -49,12 +49,20 @@
             </li>
           </ul>
           <ul class="navbar-nav">
+            {% if user.is_authenticated %}
+            <li>Hello, {{user.username}}</li>
             <li class="nav-item p-2">
-              <a class="login" href="{% url 'accounts:login' %}">Login</a>
+              <a class="login" href="{% url 'accounts:logout' %}">Logout</a>
+            </li>
+            {% else %}
+
+            <li class="nav-item p-2">
+              <a class="login" href="{% url 'accounts:login_user' %}">Login</a>
             </li>
             <li class="nav-item p-2">
               <a class="signup" href="{% url 'accounts:SignUp' %}">Sign Up</a>
             </li>
+            {% endif %}
           </ul>
         </div>
       </nav>
