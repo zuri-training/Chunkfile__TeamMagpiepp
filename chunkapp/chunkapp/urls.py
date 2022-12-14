@@ -22,7 +22,6 @@ from django.contrib.auth.views import LoginView
 urlpatterns = [
     path('', include('chunkit.urls')),
     path('accounts/', include('accounts.urls') ),
-    path('login_user/', LoginView.as_view()),
     path('admin/', admin.site.urls),
     
 ] 

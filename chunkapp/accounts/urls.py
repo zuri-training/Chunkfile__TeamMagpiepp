@@ -1,15 +1,15 @@
-from django.urls import path
-from unicodedata import name
-from . import views
+from django.urls import path, include
+from django.contrib import admin
 from django.contrib.auth import views as auth_views
-from django.contrib.auth.views import LoginView
+from . import views
+
 
 app_name = 'accounts'
 
 urlpatterns = [
     
     path ('SignUp', views.SignUp, name='SignUp'),
-    path ('login_user/', LoginView.as_view(template_name='login.html'), name='login_user'),
-    path ('logoutUser', views.logoutUser, name='logout'),
+    path('login/', auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path ('logoutUser', views.logout_user, name='logout'),
 ]
 
