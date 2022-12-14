@@ -5,7 +5,7 @@ from django.contrib.auth import logout as auth_logout
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.models import User
 from django.contrib import messages
-from django.http import HttpResponset, HttpResponseRedirect
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.views import LoginView
 from django.contrib.auth.forms import PasswordResetForm
 
@@ -58,7 +58,23 @@ def logoutUser(request):
 
 
 
+def aboutUs(request):
+    return render(request, 'aboutUs.html')
 
+def contactUs(request):
+    return render(request, 'contactUs.html')
+
+def disclaimer(request):
+    return render(request, 'disclaimer.html')
+
+def setting(request):
+    return render(request,'setting.html')
+
+def termsOfUse(request):
+    return render(request, 'termsOfUse.html')
+
+def forgotpass(request):
+    return render(request, 'forgotpass.html')
 
 
 def password_reset_request(request):
