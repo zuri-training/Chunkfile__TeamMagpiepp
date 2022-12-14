@@ -1,12 +1,16 @@
+import email
 from django.shortcuts import render, redirect
-from django.contrib.auth import  authenticate
+from django.contrib.auth import  authenticate, login, logout
 from django.contrib.auth import logout as auth_logout
 from django.contrib.auth import login as auth_login
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.http import HttpResponse, HttpResponseRedirect
 from django.contrib.auth.views import LoginView
+from django.contrib.auth.forms import PasswordResetForm
 
-
+def landing(request):
+    return render(request, 'landing.html')
 
 
 def login_user(request):
@@ -18,13 +22,13 @@ def login_user(request):
             password = request.POST.get('password')
             user = authenticate(request, username=username, password=password)
 
-       
+
             if user is not None:
                 auth_login(request, user)
                 return redirect('chunkit:dashboard')
             else:
                 messages.info(request, "Password or email is incorrect")  
-              
+
         return render(request, 'accounts/login.html')
 
 
@@ -44,9 +48,13 @@ def SignUp(request):
             
             return render(request, 'SignUp.html') 
         
-           
+
 
 
 def logoutUser(request):
     auth_logout(request)
     return redirect('chunkit:landing')
+
+
+
+
