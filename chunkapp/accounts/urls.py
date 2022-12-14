@@ -1,7 +1,7 @@
-from django.urls import path
-from unicodedata import name
-from . import views
+from django.urls import path, include
+from django.contrib import admin
 from django.contrib.auth import views as auth_views
+from . import views
 from django.contrib.auth.views import LoginView
 
 app_name = 'accounts'
