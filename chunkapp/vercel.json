@@ -1,0 +1,21 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "src": "chunkit/wsgi.py",
+            "use": "@vercel/python",
+            "config": {"maxLambdaSize": "15mb", "runtime": "python9.10"}
+        },
+        {
+            "src": "build_files.sh",
+            "use": "@vercel/static-build",
+            "config": {"distDir": "staticfiles_build"}
+        }
+    ],
+    "routes": [
+        {
+            "src": "/static/(.)",
+            "dest": "/static/chunkit"
+        }
+    ]
+}

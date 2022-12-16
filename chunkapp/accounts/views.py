@@ -63,33 +63,13 @@ def logout_user(request):
 
 
 
-
-def aboutUs(request):
-    return render(request, 'aboutUs.html')
-
-def contactUs(request):
-    return render(request, 'contactUs.html')
-
-def disclaimer(request):
-    return render(request, 'disclaimer.html')
-
-def setting(request):
-    return render(request,'setting.html')
-
-def termsOfUse(request):
-    return render(request, 'termsOfUse.html')
-
-def forgotpass(request):
-    return render(request, 'forgotpass.html')
-
-
-def password_reset_request(request):
-    if request.method == 'POST':
-        email = request.POST['email']
-        user = User.objects.get(email=email)
-        user.set_password(request.POST['password'])
-        user.save()
-        return redirect('accounts:login')
-    else:
-        return render(request, 'forgotpass.html')
+# def password_reset_request(request):
+#     if request.method == 'POST':
+#         email = request.POST['email']
+#         user = User.objects.get(email=email)
+#         user.set_password(request.POST['password'])
+#         user.save()
+#         return redirect('accounts:login')
+#     else:
+#         return render(request, 'forgotpass.html')
     
